@@ -3,11 +3,14 @@ Firmware for RGBI to VGA adapter, adjusted for TIM011 v2.0.
 Original by Dimitriy Cvetkov, with updates by Marko Solajic.
 
 Updates for TIM011:
-	- Updated palette with dark grey
-	- Fixed capture settings so line 256 shows up on VGA screen
-	- Set up default values for capture
 
---- original README below ---
+- Updated palette with dark grey
+- Fixed capture settings so line 256 shows up on VGA screen
+- Set up default values for capture
+
+original README below
+
+---
 
 Firmware for zxrgbi2vga&hdmi adapter. Supports extended Profi 512x240 16 colour mode without palette.
 
