@@ -218,7 +218,7 @@ String binary_to_string(uint8_t value, bool mask_1)
 void print_main_menu()
 {
   serial.println("");
-  serial.print("      * ZX RGB(I) to VGA/HDMI ");
+  serial.print("      * TIM011 RGBI to VGA ");
   serial.print(FW_VERSION);
   serial.println(" *");
   serial.println("");
@@ -1321,12 +1321,12 @@ settings_t settings_mode1 =
   .x3_buffering_mode = false,
   .video_sync_mode = true, // separate
   .cap_sync_mode = EXT2,
-  .frequency = 7000000,
+  .frequency = 6144000,
   .ext_clk_divider = 1,
-  .delay = 2,
-  .shX = 110,
-  .shY = 73,
-  .pin_inversion_mask = 0b1000000,
+  .delay = 6,
+  .shX = 105,
+  .shY = 37,
+  .pin_inversion_mask = 0b0000000,
   .len_VS = 30*7,
 };
 

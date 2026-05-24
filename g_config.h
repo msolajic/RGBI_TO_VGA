@@ -10,7 +10,7 @@
 #include "inttypes.h"
 #include "stdbool.h"
 
-#define FW_VERSION "v1.6.2"
+#define FW_VERSION "v1.6.2a"
 
 enum cap_sync_mode_t
 {

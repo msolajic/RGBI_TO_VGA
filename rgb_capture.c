@@ -153,7 +153,7 @@ void __not_in_flash_func(dma_handler_capture2())
   int nShXadd = _80DS ? -44 : 80;
   int shX = capture_settings.shX + nShXadd;
   pio_sm_put(PIO_CAP, SM_CAP, shX);
-  pio_sm_put(PIO_CAP, SM_CAP, line_no == 1 ? capture_settings.shY * 640 : 0);
+  pio_sm_put(PIO_CAP, SM_CAP, line_no == 2 ? capture_settings.shY * 640 : 0);
 
   dma_hw->ints1 = 1u << dma_ch1;
   dma_channel_set_read_addr(dma_ch1, &cap_dma_buf_addr[dma_buf_idx & 1], false);
